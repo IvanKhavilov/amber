@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Prosto+One&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--submenu">
+                <a class="menu__link menu__link--active" href="">О компании</a>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="">Турагенствам</a></li>
+              <li class="menu__item menu__item--submenu">
+                <a class="menu__link" href="">Туристам</a>
+                <ul class="submenu">
+                  <li class="submenu__item">Приём в Калининграде и области</li>
+                  <li class="submenu__item">Экскурсии в Калининграде</li>
+                  <li class="submenu__item">Индивидуальные экскурсии</li>
+                  <li class="submenu__item">Лечение и оздоровление</li>
+                  <li class="submenu__item">Достопримечательности</li>
+                  <li class="submenu__item">Правила проезда в Калиниградскую область</li>
+                  <li class="submenu__item">Апартаменты</li>
+                  <li class="submenu__item">Гостиницы</li>
+                  <li class="submenu__item">Автобусные туры по Европе</li>
+                  <li class="submenu__item">Туры по России</li>
+                  <li class="submenu__item">Авиатуры</li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link" href="">Услуги</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Отзывы</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone__inner">
+            <a class="phone__number" href="tel:88001009186">8 800-100-91-86</a>
+            <button class="phone__order">Заказать звонок</button>
+          </div>
+        </div>
+        <h1 class="title title__main 1 title--active">Туры в Калининград</h1>
+        <h1 class="title title__main 2">Экскурсии в Калининград</h1>
+        <h1 class="title title__main 3">Оздоровление</h1>
+        <h1 class="title title__main 4">Гостиницы</h1>
+        <div class="header__btn-wrap">
+          <a class="header__btn" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <ul class="header__list" id="tabs">
+          <li class="list__item" data-btn="1">Туры в Калининград</li>
+          <li class="list__item list__item--active" data-btn="2">Экскурсии</li>
+          <li class="list__item" data-btn="3">Оздоровление</li>
+          <li class="list__item" data-btn="4">Гостиницы</li>
+        </ul>
+      </div>
+    </header>
+    <section class="sentence">
+      <div class="container">
+        <h2 class="section__title">Лучшие предложения</h2>
+        <div class="sentence__slider">
+          <div class="button__prev" id="sentence__prev"></div>
+          <div class="sentence__slider-item active">
+            <div class="sentence__slider-image">
+              <img class="sentence__slider-img" src="images/Photo-tour.jpg" loading="lazy" alt="" />
+              <div class="sentence__slider-month">ОКТЯБРЬ-ДЕКАБРЬ 2021</div>
+            </div>
+            <div class="sentence__slider-descr">
+              <div class="sentence__slider-title">
+                Тур по Калининградской области <br />
+                «На самом западе России»
+              </div>
+              <div class="sentence__slider-text sentence__slider-rout">
+                Маршрут по городам: Куршская коса, Янтарный, Светлогорск, Балтийск, Черняховск, Гусев, Советск, Калининград
+              </div>
+              <div class="sentence__slider-text sentence__slider-date">
+                <span>Даты:</span> с 1.10.21 по 24.12.21, заезд в любой день недели немного текста в две строки
+              </div>
+              <div class="sentence__slider-text"><span>Продолжительность:</span> от 2 до 7 дней</div>
+              <div class="sentence__slider-price"><span>Цена:</span> от 5800 ₽</div>
+              <button class="sentence__slider-btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="sentence__slider-item">
+            <div class="sentence__slider-image">
+              <img class="sentence__slider-img" src="images/new-yaer.jpg" loading="lazy" alt="" />
+              <div class="sentence__slider-month">ОКТЯБРЬ-ДЕКАБРЬ 2021</div>
+            </div>
+            <div class="sentence__slider-descr">
+              <div class="sentence__slider-title">
+                Тур по Калининградской области <br />
+                «На самом западе России»
+              </div>
+              <div class="sentence__slider-text sentence__slider-rout">
+                Маршрут по городам: Куршская коса, Янтарный, Светлогорск, Балтийск, Черняховск, Гусев, Советск, Калининград
+              </div>
+              <div class="sentence__slider-text sentence__slider-date">
+                <span>Даты:</span> с 1.10.21 по 24.12.21, заезд в любой день недели немного текста в две строки
+              </div>
+              <div class="sentence__slider-text"><span>Продолжительность:</span> от 2 до 7 дней</div>
+              <div class="sentence__slider-price"><span>Цена:</span> от 5800 ₽</div>
+              <button class="sentence__slider-btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="sentence__slider-item">
+            <div class="sentence__slider-image">
+              <img class="sentence__slider-img" src="images/Photo-tour.jpg" loading="lazy" alt="" />
+              <div class="sentence__slider-month">ОКТЯБРЬ-ДЕКАБРЬ 2021</div>
+            </div>
+            <div class="sentence__slider-descr">
+              <div class="sentence__slider-title">
+                Тур по Калининградской области <br />
+                «На самом западе России»
+              </div>
+              <div class="sentence__slider-text sentence__slider-rout">
+                Маршрут по городам: Куршская коса, Янтарный, Светлогорск, Балтийск, Черняховск, Гусев, Советск, Калининград
+              </div>
+              <div class="sentence__slider-text sentence__slider-date">
+                <span>Даты:</span> с 1.10.21 по 24.12.21, заезд в любой день недели немного текста в две строки
+              </div>
+              <div class="sentence__slider-text"><span>Продолжительность:</span> от 2 до 7 дней</div>
+              <div class="sentence__slider-price"><span>Цена:</span> от 5800 ₽</div>
+              <button class="sentence__slider-btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="sentence__slider-item">
+            <div class="sentence__slider-image">
+              <img class="sentence__slider-img" src="images/Photo-tour.jpg" loading="lazy" alt="" />
+              <div class="sentence__slider-month">ОКТЯБРЬ-ДЕКАБРЬ 2021</div>
+            </div>
+            <div class="sentence__slider-descr">
+              <div class="sentence__slider-title">
+                Тур по Калининградской области <br />
+                «На самом западе России»
+              </div>
+              <div class="sentence__slider-text sentence__slider-rout">
+                Маршрут по городам: Куршская коса, Янтарный, Светлогорск, Балтийск, Черняховск, Гусев, Советск, Калининград
+              </div>
+              <div class="sentence__slider-text sentence__slider-date">
+                <span>Даты:</span> с 1.10.21 по 24.12.21, заезд в любой день недели немного текста в две строки
+              </div>
+              <div class="sentence__slider-text"><span>Продолжительность:</span> от 2 до 7 дней</div>
+              <div class="sentence__slider-price"><span>Цена:</span> от 5800 ₽</div>
+              <button class="sentence__slider-btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="button__next" id="sentence__next"></div>
+        </div>
+        <div class="sentence__dots-wrap">
+          <span class="sentence__dots active"></span>
+          <span class="sentence__dots"></span>
+          <span class="sentence__dots"></span>
+          <span class="sentence__dots"></span>
+        </div>
+      </div>
+    </section>
+    <section class="form-number">
+      <h2 class="form-number__title">
+        Оставьте заявку и мы <br />
+        подберем <span>лучший тур для вас</span>
+      </h2>
+      <p class="form-number__subtitle">Наш менеджер свяжется с вами и уточнит ваши пожелания.</p>
+      <form class="send-number" action="#">
+        <input class="form-number__input" type="text" placeholder="Введите номер телефона" />
+        <button class="form-number__btn" type="submit">Отправить</button>
+        <p class="form-number__confidentiality">
+          *нажимая на кнопку, вы соглашаетесь с <a class="confidentiality-link" href="#">политикой конфиденциальности</a>
+        </p>
+      </form>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="section__title">Наши услуги</h2>
+        <p class="subtitle">
+          Наша компания победитель профессионального конкурса <br />
+          «Талант гостеприимства 2021» в номинации «Лучший экскурсовод»
+        </p>
+        <div class="services__wrapp">
+          <div class="services__item">
+            <img class="services__item-img" src="images/retro-auto.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Экскурсия на ретро автомобиле</p>
+            <p class="services__item-descr">
+              Продвинем 10 ссылок <br />
+              на первые места
+            </p>
+            <botton class="services__item-btn">от 2000 ₽</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/school-tour.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Школьные туры</p>
+            <p class="services__item-descr">
+              Разнообразим досуг <br />
+              школьников
+            </p>
+            <botton class="services__item-btn">от 6000 ₽</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/transfer.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Трансфер</p>
+            <p class="services__item-descr">
+              Встретим с табличкой <br />
+              «Фамилия / Янтарная Мозаика»
+            </p>
+            <botton class="services__item-btn">от 10000 ₽</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/mice.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">MICE</p>
+            <p class="services__item-descr">Организуем мероприятие</p>
+            <botton class="services__item-btn">Цена по запросу</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/tours.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Туры по России</p>
+            <p class="services__item-descr">Только лучшие предложения</p>
+            <botton class="services__item-btn">Цена по запросу</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/new-yaer.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Новогодние туры</p>
+            <p class="services__item-descr">Новогодние туры в Калининград</p>
+            <botton class="services__item-btn">от 16500 ₽</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/corporat.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Корпоративные туры</p>
+            <p class="services__item-descr">
+              Чтобы хорошо работать, нужно <br />
+              хорошо отдыхать
+            </p>
+            <botton class="services__item-btn">от 7000 ₽</botton>
+          </div>
+          <div class="services__item">
+            <img class="services__item-img" src="images/sanatoryi.jpg" loading="lazy" alt="" />
+            <p class="services__item-title">Гарантированные номера</p>
+            <p class="services__item-descr">
+              Номера в Санатории <br />
+              «Янтарный берег»
+            </p>
+            <botton class="services__item-btn">Цена по запросу</botton>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__title">Отзывы</h2>
+      <div class="feedback__wrapp">
+        <div class="button__prev" id="feedback__prev"></div>
+        <div class="feedback__item active">
+          <div class="feedback__item-title">Узнали про историю и архитектуру г. Калининграда</div>
+          <div class="feedback__item-text">
+            11 ноября были на экскурсии «Сумерки Кёнигсберга». Трансфер во время, автобус хороший. Гид Анна на высшем уровне,
+            ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
+          </div>
+          <div class="feedback__item-user">Елена</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-grade">4.9</div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__item-title">Узнали про историю и архитектуру г. Калининграда</div>
+          <div class="feedback__item-text">
+            11 ноября были на экскурсии «Сумерки Кёнигсберга». Трансфер во время, автобус хороший. Гид Анна на высшем уровне,
+            ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
+          </div>
+          <div class="feedback__item-user">Елена</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-grade">5</div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__item-title">Узнали про историю и архитектуру г. Калининграда</div>
+          <div class="feedback__item-text">
+            11 ноября были на экскурсии «Сумерки Кёнигсберга». Трансфер во время, автобус хороший. Гид Анна на высшем уровне,
+            ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
+          </div>
+          <div class="feedback__item-user">Елена</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-grade">4.9</div>
+        </div>
+        <div class="feedback__item">
+          <div class="feedback__item-title">Узнали про историю и архитектуру г. Калининграда</div>
+          <div class="feedback__item-text">
+            11 ноября были на экскурсии «Сумерки Кёнигсберга». Трансфер во время, автобус хороший. Гид Анна на высшем уровне,
+            ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
+          </div>
+          <div class="feedback__item-user">Елена</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-grade">4.5</div>
+        </div>
+        <div class="button__next" id="feedback__next"></div>
+      </div>
+      <div class="feedback__dots-wrap">
+        <span class="feedback__dots active"></span>
+        <span class="feedback__dots"></span>
+        <span class="feedback__dots"></span>
+        <span class="feedback__dots"></span>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <h2 class="section__title">
+          Туроператор «Янтарная мозаика»: 13 лет успешной <br />
+          работы в Калининграде и области
+        </h2>
+        <p class="info__text">
+          Туроператор «Янтарная Мозаика» — это компания с многолетним опытом в сфере путешествий и экскурсионного обслуживания. Мы
+          оказываем полный спектр услуг по приему в Калининграде и области: от размещения в любой гостинице/ апартаментах города и
+          области, санаторно-курортного обслуживания до организации путешествия или отдыха «Под ключ» (разработка туров в
+          Калининград, бронирование билетов, трансферов, услуги проживания, формирования экскурсионного пакета, сельский туризм).
+          <br /><br />
+          За 11 лет работы установлены прочные деловые связи с гостиницами, санаториями, музеями, ресторанами, транспортными
+          компаниями. Это позволяет нам удовлетворить пожелания самого требовательного клиента. В компании «Янтарная мозаика» есть
+          свой автопарк и постоянный штат профессиональных гидов.
+          <br /><br />
+          Для наших туристов мы открыли офисы в курортных городах – Зеленоградске и Светлогорске.
+          <br /><br />
+          Мы принимаем активное участие в благотворительных акциях, семинарах и выставках, посвященных развитию туристской
+          отрасли.
+          <br /><br />
+          Туроператор «Янтарная Мозаика» прошел квалификационный отбор и получил право на организацию и проведение субсидируемых
+          детских туров в Калининградскую область.
+          <br /><br />
+          Наша компания первая получила признание «Лучший туроператор области» в сфере внутреннего и въездного туризма, и занимает
+          ведущие места среди партнёрских организаций по числу проданных путевок и обслуженных клиентов.
+          <br /><br />
+          Наша агентская сеть – это более 500 надежных партнеров на всей территории РФ и не только. Приоритетом в работе с
+          турагентствами являются максимальное удобство взаимодействия и оперативность.
+          <br /><br />
+          Мы поощряем обратную связь о работе и не останавливаемся на достигнутом.
+          <br /><br />
+          Мы регулярно проводим встречи с нашими турагентами в формате «Бизнес-завтрак» в Калининграде и по всей территории
+          Российской Федерации. В практику вошли регулярные обучающие вебинары нашего руководителя экскурсионного отдела – Марии
+          Войтович.
+        </p>
+        <h3 class="info__title">Что получают наши клиенты:</h3>
+        <ol class="info__list">
+          <li class="info__list-item">100% безопасность и качество;</li>
+          <li class="info__list-item">Большой выбор туров/ежедневных экскурсий на любой вкус и кошелек;</li>
+          <li class="info__list-item">Разработка индивидуальных туров и экскурсионных маршрутов любой сложности;</li>
+          <li class="info__list-item">Оперативная обработка заказа и оформление документов;</li>
+          <li class="info__list-item">Только профессиональные гиды;</li>
+          <li class="info__list-item">Круглосуточная поддержка.</li>
+        </ol>
+        <h3 class="info__title">Почему нас выбирают турагенты:</h3>
+        <ol class="info__list">
+          <li class="info__list-item">Надежный туроператор в Калининграде;</li>
+          <li class="info__list-item">100% гарантия качества и безопасность;</li>
+          <li class="info__list-item">Гарантированные сборные туры в Калининград (от 1 чел.);</li>
+          <li class="info__list-item">Поддержка и обучение агентской сети;</li>
+          <li class="info__list-item">Индивидуальный подход и оперативность;</li>
+          <li class="info__list-item">Система скидок и бонусов;</li>
+          <li class="info__list-item">
+            Знакомство с Калининградской областью в рамках мини-рекламного тура при персональном сопровождении менеджера в любой
+            период года.
+          </li>
+          <li class="info__list-item">Служба SOS 24/7/365.</li>
+        </ol>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a class="menu__list-link" href="">О компании</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Туристам</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Турагенствам</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Контакты</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Отзывы</a></li>
+            </ul>
+          </nav>
+          <div class="social__wrapp">
+            <a class="social__item" href="#"><img class="social__item-img" src="images/instagram.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/vk.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/ok.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/facebook.svg" alt="logo" /> </a>
+            <a class="social__item" href="#">
+              <img class="social__item-img" src="images/Mask-Group.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="phone__inner">
+            <a class="footer__number" href="tel:88001009186">8 800-100-91-86</a>
+            <p class="footer__number-info">Бесплатно для регионов РФ</p>
+          </div>
+          <a class="copyright" href="#">© «Янтарная Мозаика-Надежда»</a>
+          <div class="support">Поддержка и продвижение <a class="support__link" href="#">traffic-system.ru</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
