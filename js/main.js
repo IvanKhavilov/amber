@@ -1,28 +1,13 @@
-const tabBtn = document.querySelectorAll(".list__item");
-const title = document.querySelectorAll(".title__main");
+$(document).ready(function () {
+  $(".header__slider-inner").slick({
+    arrows: false,
+    dots: true,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+  });
 
-tabBtn.forEach(function (elem) {
-  elem.addEventListener("click", activeTab);
+  $(".slick-dots").wrap("<div class='slick-dots__wrap'></div>");
 });
-
-function activeTab() {
-  tabBtn.forEach(function (elem) {
-    elem.classList.remove("list__item--active");
-  });
-  this.classList.add("list__item--active");
-  let tabName = this.getAttribute("data-btn");
-  activeTitle(tabName);
-}
-
-function activeTitle(tabName) {
-  title.forEach(function (item) {
-    if (item.classList.contains(tabName)) {
-      item.classList.add("title--active");
-    } else {
-      item.classList.remove("title--active");
-    }
-  });
-}
 
 const btnNextSentence = document.getElementById("sentence__next");
 const btnPrevSentence = document.getElementById("sentence__prev");

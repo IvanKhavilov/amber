@@ -12,40 +12,41 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__top">
-          <a class="logo" href="#">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
             <img class="logo__img" src="images/logo.png" alt="logo" />
           </a>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item menu__item--submenu">
-                <a class="menu__link menu__link--active" href="">О компании</a>
+              <li class="menu__item menu__item--submenu menu__item--active">
+                <a class="menu__link menu__link--submenu" href="">О компании</a>
               </li>
-              <li class="menu__item"><a class="menu__link" href="">Турагенствам</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Турагенствам</a></li>
               <li class="menu__item menu__item--submenu">
-                <a class="menu__link" href="">Туристам</a>
+                <a class="menu__link menu__link--submenu" href="">Туристам </a>
                 <ul class="submenu">
-                  <li class="submenu__item">Приём в Калининграде и области</li>
-                  <li class="submenu__item">Экскурсии в Калининграде</li>
-                  <li class="submenu__item">Индивидуальные экскурсии</li>
-                  <li class="submenu__item">Лечение и оздоровление</li>
-                  <li class="submenu__item">Достопримечательности</li>
-                  <li class="submenu__item">Правила проезда в Калиниградскую область</li>
-                  <li class="submenu__item">Апартаменты</li>
-                  <li class="submenu__item">Гостиницы</li>
-                  <li class="submenu__item">Автобусные туры по Европе</li>
-                  <li class="submenu__item">Туры по России</li>
-                  <li class="submenu__item">Авиатуры</li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Приём в Калининграде и области </a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Экскурсии в Калининграде</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Индивидуальные экскурсии</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Лечение и оздоровление</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Достопримечательности</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Правила проезда в Калиниградскую область</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Апартаменты</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Гостиницы</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Автобусные туры по Европе</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Туры по России</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Авиатуры</a></li>
                 </ul>
               </li>
-              <li class="menu__item menu__item--submenu"><a class="menu__link" href="">Услуги</a></li>
-              <li class="menu__item"><a class="menu__link" href="">Отзывы</a></li>
-              <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link menu__link--submenu" href="">Услуги</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Отзывы</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Контакты</a></li>
             </ul>
           </nav>
           <div class="phone__inner">
@@ -53,23 +54,44 @@
             <button class="phone__order">Заказать звонок</button>
           </div>
         </div>
-        <h1 class="title title__main 1 title--active">Туры в Калининград</h1>
-        <h1 class="title title__main 2">Экскурсии в Калининград</h1>
-        <h1 class="title title__main 3">Оздоровление</h1>
-        <h1 class="title title__main 4">Гостиницы</h1>
-        <div class="header__btn-wrap">
-          <a class="header__btn" href="#">Подробнее</a>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <ul class="header__list" id="tabs">
-          <li class="list__item" data-btn="1">Туры в Калининград</li>
-          <li class="list__item list__item--active" data-btn="2">Экскурсии</li>
-          <li class="list__item" data-btn="3">Оздоровление</li>
-          <li class="list__item" data-btn="4">Гостиницы</li>
-        </ul>
       </div>
     </header>
+    <section class="header__slider">
+      <div class="header__slider-inner">
+        <div class="header__slider-item" style="background-image: url(images/header-main-background.jpg)">
+          <div class="item__wrapp">
+            <h1 class="title title__main">Туры в Калининград</h1>
+            <div class="header__btn-wrap">
+              <a class="header__btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item" style="background-image: url(images/background2.jpg)">
+          <div class="item__wrapp">
+            <h1 class="title title__main">Экскурсии в Калининград</h1>
+            <div class="header__btn-wrap">
+              <a class="header__btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item" style="background-image: url(images/header-main-background.jpg)">
+          <div class="item__wrapp">
+            <h1 class="title title__main">Оздоровление</h1>
+            <div class="header__btn-wrap">
+              <a class="header__btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item" style="background-image: url(images/background2.jpg)">
+          <div class="item__wrapp">
+            <h1 class="title title__main">Гостиницы</h1>
+            <div class="header__btn-wrap">
+              <a class="header__btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="sentence">
       <div class="container">
         <h2 class="section__title">Лучшие предложения</h2>
@@ -374,7 +396,7 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__top">
-          <a class="footer__logo" href="#">
+          <a class="footer__logo" href="index.html">
             <img class="footer__logo-img" src="images/logo.png" alt="logo" />
           </a>
           <nav class="menu">
@@ -407,6 +429,8 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
