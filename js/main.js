@@ -2,11 +2,30 @@ $(document).ready(function () {
   $(".header__slider-inner").slick({
     arrows: false,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4000,
   });
 
   $(".slick-dots").wrap("<div class='slick-dots__wrap'></div>");
+
+  $(".covid-info__close").on("click", function () {
+    $(".covid-info").css("display", "none");
+  });
+
+  $(".covid-info").show();
+
+  $(".menu-burger").on("click", function () {
+    $(".menu-burger").toggleClass("_active");
+    $(".menu__list").toggleClass("_active");
+  });
+});
+
+let headerParalax = document.querySelectorAll(".bg-paralax");
+
+this.addEventListener("scroll", function () {
+  for (paralax of headerParalax) {
+    paralax.style.top = +this.pageYOffset + "px";
+  }
 });
 
 const btnNextSentence = document.getElementById("sentence__next");
