@@ -22,14 +22,17 @@
           <a class="logo" href="index.html">
             <img class="logo__img" src="images/logo.png" alt="logo" />
           </a>
+          <div class="menu-burger">
+            <span></span>
+          </div>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item menu__item--submenu menu__item--active">
-                <a class="menu__link menu__link--submenu" href="">О компании</a>
+                <a class="menu__link menu__link--submenu" href="#">О компании</a>
               </li>
-              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Турагенствам</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="#">Турагенствам</a></li>
               <li class="menu__item menu__item--submenu">
-                <a class="menu__link menu__link--submenu" href="">Туристам </a>
+                <a class="menu__link menu__link--submenu" href="#">Туристам </a>
                 <ul class="submenu">
                   <li class="submenu__item"><a class="submenu__link" href="#">Приём в Калининграде и области </a></li>
                   <li class="submenu__item"><a class="submenu__link" href="#">Экскурсии в Калининграде</a></li>
@@ -44,13 +47,14 @@
                   <li class="submenu__item"><a class="submenu__link" href="#">Авиатуры</a></li>
                 </ul>
               </li>
-              <li class="menu__item menu__item--submenu"><a class="menu__link menu__link--submenu" href="">Услуги</a></li>
-              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Отзывы</a></li>
-              <li class="menu__item menu__item--hover"><a class="menu__link" href="">Контакты</a></li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link menu__link--submenu" href="#">Услуги</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="#">Отзывы</a></li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="phone__inner">
             <a class="phone__number" href="tel:88001009186">8 800-100-91-86</a>
+            <a class="phone__number--adaptiv" href="tel:88001009186"></a>
             <button class="phone__order">Заказать звонок</button>
           </div>
         </div>
@@ -58,7 +62,8 @@
     </header>
     <section class="header__slider">
       <div class="header__slider-inner">
-        <div class="header__slider-item" style="background-image: url(images/header-main-background.jpg)">
+        <div class="header__slider-item">
+          <div id="bg-paralax" class="bg-paralax" style="background-image: url(images/header-main-background.jpg)"></div>
           <div class="item__wrapp">
             <h1 class="title title__main">Туры в Калининград</h1>
             <div class="header__btn-wrap">
@@ -66,7 +71,8 @@
             </div>
           </div>
         </div>
-        <div class="header__slider-item" style="background-image: url(images/background2.jpg)">
+        <div class="header__slider-item">
+          <div id="bg-paralax" class="bg-paralax" style="background-image: url(images/background2.jpg)"></div>
           <div class="item__wrapp">
             <h1 class="title title__main">Экскурсии в Калининград</h1>
             <div class="header__btn-wrap">
@@ -74,7 +80,8 @@
             </div>
           </div>
         </div>
-        <div class="header__slider-item" style="background-image: url(images/header-main-background.jpg)">
+        <div class="header__slider-item">
+          <div id="bg-paralax" class="bg-paralax" style="background-image: url(images/header-main-background.jpg)"></div>
           <div class="item__wrapp">
             <h1 class="title title__main">Оздоровление</h1>
             <div class="header__btn-wrap">
@@ -82,7 +89,8 @@
             </div>
           </div>
         </div>
-        <div class="header__slider-item" style="background-image: url(images/background2.jpg)">
+        <div class="header__slider-item">
+          <div id="bg-paralax" class="bg-paralax" style="background-image: url(images/background2.jpg)"></div>
           <div class="item__wrapp">
             <h1 class="title title__main">Гостиницы</h1>
             <div class="header__btn-wrap">
@@ -279,6 +287,7 @@
         </div>
       </div>
     </section>
+
     <section class="feedback">
       <h2 class="feedback__title">Отзывы</h2>
       <div class="feedback__wrapp">
@@ -290,7 +299,7 @@
             ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
           </div>
           <div class="feedback__item-user">Елена</div>
-          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г. - 30.10.2021 г.)</div>
           <div class="feedback__item-grade">4.9</div>
         </div>
         <div class="feedback__item">
@@ -300,7 +309,7 @@
             ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
           </div>
           <div class="feedback__item-user">Елена</div>
-          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г. - 30.10.2021 г.)</div>
           <div class="feedback__item-grade">5</div>
         </div>
         <div class="feedback__item">
@@ -310,7 +319,7 @@
             ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
           </div>
           <div class="feedback__item-user">Елена</div>
-          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г. - 30.10.2021 г.)</div>
           <div class="feedback__item-grade">4.9</div>
         </div>
         <div class="feedback__item">
@@ -320,7 +329,7 @@
             ей отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!
           </div>
           <div class="feedback__item-user">Елена</div>
-          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г.-30.10.2021 г.)</div>
+          <div class="feedback__item-date">Тур на 6 дней (с 25.10.2021 г. - 30.10.2021 г.)</div>
           <div class="feedback__item-grade">4.5</div>
         </div>
         <div class="button__next" id="feedback__next"></div>
@@ -334,9 +343,8 @@
     </section>
     <section class="info">
       <div class="container">
-        <h2 class="section__title">
-          Туроператор «Янтарная мозаика»: 13 лет успешной <br />
-          работы в Калининграде и области
+        <h2 class="section__title info__title">
+          Туроператор «Янтарная мозаика»: 13 лет успешной работы в Калининграде и области
         </h2>
         <p class="info__text">
           Туроператор «Янтарная Мозаика» — это компания с многолетним опытом в сфере путешествий и экскурсионного обслуживания. Мы
@@ -368,7 +376,7 @@
           Российской Федерации. В практику вошли регулярные обучающие вебинары нашего руководителя экскурсионного отдела – Марии
           Войтович.
         </p>
-        <h3 class="info__title">Что получают наши клиенты:</h3>
+        <h3 class="info__title-list">Что получают наши клиенты:</h3>
         <ol class="info__list">
           <li class="info__list-item">100% безопасность и качество;</li>
           <li class="info__list-item">Большой выбор туров/ежедневных экскурсий на любой вкус и кошелек;</li>
@@ -377,7 +385,7 @@
           <li class="info__list-item">Только профессиональные гиды;</li>
           <li class="info__list-item">Круглосуточная поддержка.</li>
         </ol>
-        <h3 class="info__title">Почему нас выбирают турагенты:</h3>
+        <h3 class="info__title-list">Почему нас выбирают турагенты:</h3>
         <ol class="info__list">
           <li class="info__list-item">Надежный туроператор в Калининграде;</li>
           <li class="info__list-item">100% гарантия качества и безопасность;</li>
@@ -428,6 +436,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="covid-info">
+      <div class="covid-info__decor"></div>
+      <div class="covid-info__inner">
+        <p class="covid-info__text">
+          Для посещения экскурсий обязательно необходимо иметь QR-код о вакцинации или о перенесенном ковиде.
+        </p>
+        <a class="covid-info__link" href="#">Подробнее</a>
+      </div>
+      <button class="covid-info__close"></button>
+    </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
