@@ -12,11 +12,11 @@ $(document).ready(function () {
     variableWidth: true,
     prevArrow: `
       <button type="button" class="slick-prev">
-        <img src="../images/arrow-prev.svg" />
+        <img src="images/arrow-prev.svg" />
       </button>`,
     nextArrow: `
       <button type="button" class="slick-next">
-        <img src="../images/arrow-next.svg" />
+        <img src="images/arrow-next.svg" />
       </button>`,
     responsive: [
       {
@@ -34,11 +34,11 @@ $(document).ready(function () {
     variableWidth: true,
     prevArrow: `
       <button type="button" class="slick-prev">
-        <img src="../images/arrow-prev.svg" />
+        <img src="images/arrow-prev.svg" />
       </button>`,
     nextArrow: `
       <button type="button" class="slick-next">
-        <img src="../images/arrow-next.svg" />
+        <img src="images/arrow-next.svg" />
       </button>`,
     responsive: [
       {
