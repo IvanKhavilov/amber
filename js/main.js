@@ -5,6 +5,50 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 4000,
   });
+  $(".sentence__slider").slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    prevArrow: `
+      <button type="button" class="slick-prev">
+        <img src="../images/arrow-prev.svg" />
+      </button>`,
+    nextArrow: `
+      <button type="button" class="slick-next">
+        <img src="../images/arrow-next.svg" />
+      </button>`,
+    responsive: [
+      {
+        breakpoint: 805,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+  $(".feedback__wrapp").slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    prevArrow: `
+      <button type="button" class="slick-prev">
+        <img src="../images/arrow-prev.svg" />
+      </button>`,
+    nextArrow: `
+      <button type="button" class="slick-next">
+        <img src="../images/arrow-next.svg" />
+      </button>`,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
 
   $(".slick-dots").wrap("<div class='slick-dots__wrap'></div>");
 
@@ -27,96 +71,3 @@ this.addEventListener("scroll", function () {
     paralax.style.top = +this.pageYOffset + "px";
   }
 });
-
-const btnNextSentence = document.getElementById("sentence__next");
-const btnPrevSentence = document.getElementById("sentence__prev");
-const btnNextFeedback = document.getElementById("feedback__next");
-const btnPrevFeedback = document.getElementById("feedback__prev");
-const sentenceSlides = document.querySelectorAll(".sentence__slider-item");
-const feedbackSlides = document.querySelectorAll(".feedback__item");
-const sentenceDots = document.querySelectorAll(".sentence__dots");
-const feedbackDots = document.querySelectorAll(".feedback__dots");
-
-let index = 0;
-
-const activeSentenceSlide = n => {
-  for (slide of sentenceSlides) {
-    slide.classList.remove("active");
-  }
-  sentenceSlides[n].classList.add("active");
-};
-
-const activeSentenceDot = n => {
-  for (dot of sentenceDots) {
-    dot.classList.remove("active");
-  }
-  sentenceDots[n].classList.add("active");
-};
-
-const prepareCurrentSentenceSlide = ind => {
-  activeSentenceSlide(index);
-  activeSentenceDot(index);
-};
-const prepareCurrentFeedbackSlide = ind => {
-  activeFeedbackSlide(index);
-  activeFeedbackDot(index);
-};
-
-const nextSentenceSlide = () => {
-  if (index == sentenceSlides.length - 1) {
-    index = 0;
-    prepareCurrentSentenceSlide();
-  } else {
-    index++;
-    prepareCurrentSentenceSlide();
-  }
-};
-
-const prevSentenceSlide = () => {
-  if (index == 0) {
-    index = sentenceSlides.length - 1;
-    prepareCurrentSentenceSlide();
-  } else {
-    index--;
-    prepareCurrentSentenceSlide();
-  }
-};
-
-const activeFeedbackSlide = n => {
-  for (item of feedbackSlides) {
-    item.classList.remove("active");
-  }
-  feedbackSlides[n].classList.add("active");
-};
-
-const activeFeedbackDot = n => {
-  for (dot of feedbackDots) {
-    dot.classList.remove("active");
-  }
-  feedbackDots[n].classList.add("active");
-};
-
-const nextFeedbackSlide = () => {
-  if (index == feedbackSlides.length - 1) {
-    index = 0;
-    prepareCurrentFeedbackSlide();
-  } else {
-    index++;
-    prepareCurrentFeedbackSlide();
-  }
-};
-
-const prevFeedbackSlide = () => {
-  if (index == 0) {
-    index = feedbackSlides.length - 1;
-    prepareCurrentFeedbackSlide();
-  } else {
-    index--;
-    prepareCurrentFeedbackSlide();
-  }
-};
-
-btnNextSentence.addEventListener("click", nextSentenceSlide);
-btnPrevSentence.addEventListener("click", prevSentenceSlide);
-btnNextFeedback.addEventListener("click", nextFeedbackSlide);
-btnPrevFeedback.addEventListener("click", prevFeedbackSlide);
