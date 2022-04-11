@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Prosto+One&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <div class="menu-burger">
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--submenu">
+                <a class="menu__link menu__link--submenu" href="#">О компании</a>
+              </li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="#">Турагенствам</a></li>
+              <li class="menu__item menu__item--submenu">
+                <a class="menu__link menu__link--submenu" href="#">Туристам </a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a class="submenu__link" href="#">Приём в Калининграде и области </a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Экскурсии в Калининграде</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Индивидуальные экскурсии</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Лечение и оздоровление</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Достопримечательности</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Правила проезда в Калиниградскую область</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Апартаменты</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Гостиницы</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Автобусные туры по Европе</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Туры по России</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="#">Авиатуры</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link menu__link--submenu" href="#">Услуги</a></li>
+              <li class="menu__item menu__item--hover">
+                <a class="menu__link menu__item-active" href="feedback-page.html">Отзывы</a>
+              </li>
+              <li class="menu__item menu__item--hover"><a class="menu__link" href="contact-page.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone__inner">
+            <a class="phone__number" href="tel:88001009186">8 800-100-91-86</a>
+            <a class="phone__number--adaptiv" href="tel:88001009186"></a>
+            <button class="phone__order">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="mein-screen" style="background-image: url(images/contact-background.jpg)">
+      <h1 class="title title__main-screen">Отзывы</h1>
+    </section>
+
+    <section class="feedback__form-wrapp">
+      <div class="container">
+        <h2 class="section__title">Оставьте свой отзыв</h2>
+        <form action="" class="feedback__form">
+          <input class="input__name" type="text" placeholder="Имя" />
+          <input class="input__title" type="text" placeholder="Какой тур или экскурсию вы посетили" />
+          <label class="custom-file">
+            <input type="file" />
+            <span>
+              Вы можете добавить до <br />
+              5 фотографий с отдыха
+            </span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" />
+            <span class="custom-checkbox__text">Оставляя отзыв, вы соглашаетесь на обработку </span>
+            <a class="custom-checkbox__link" href="#">персональных данных</a>
+          </label>
+          <textarea class="feedback__textarea" name="feedback" id="" cols="30" rows="10" placeholder="Отзыв"></textarea>
+          <button class="send__form" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <h2 class="section__title">Отзывы клиентов</h2>
+        <div class="feedback__item">
+          <h3 class="feedback__title">Экскурсия “Сумерки Кенигсберга” с музеем Фридландские ворота и ужином в ресторане</h3>
+          <p class="feedback__text">
+            11 ноября были на экскурсии “Сумерки Кёнигсберга”. Трансфер во время, автобус хороший. Гид Анна на высшем уровне, ей
+            отдельное спасибо. Благодаря ей узнали много информации про историю и архитектуру города Калининграда. Спасибо!!!
+          </p>
+          <div class="feedback__inner">
+            <div class="feedback__name">Дарья</div>
+            <div class="feedback__date">11.10.2021</div>
+          </div>
+          <div class="feedback__foto uk-child-width-1-3@m" uk-lightbox="animation: slide">
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img1.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img2.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img3.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img4.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img5.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img5.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <h3 class="feedback__title">«В Калининград в любой день. цикличный тур»</h3>
+          <p class="feedback__text">
+            С 8 по 15 сентября я побывала в Калининграде по программе “В Калининград в любой день. цикличный тур”, получила
+            множество ярких эмоций и новых знаний об интереснейшем, многогранном городе и области, посетила Черняховск, Гусев,
+            Балтийск, Зеленоградск и несколько замков. Обязательно приеду снова, чтобы осмотреть другие города с богатой историей
+            и Куршскую косу. Всё – отель “Калининград”, экскурсии и трансфер в обе стороны – оставило наилучшие впечатления,
+            благодарю сотрудников компании!
+          </p>
+          <div class="feedback__inner">
+            <div class="feedback__name">Елена егорова</div>
+            <div class="feedback__date">20.09.2021</div>
+          </div>
+          <div class="feedback__foto uk-child-width-1-3@m" uk-lightbox="animation: slide">
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img1.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img2.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/feadback-img3.jpg" alt="">
+                <img class="feedback__img" src="images/feadback-img3.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="answer__item">
+          <div class="answer__wrapp">
+            <p class="answer__text">Елена, здравствуйте!</p>
+            <p class="answer__text">Очень рады, что вам всё понравилось. Будем ждать вас снова! :)</p>
+            <div class="answer__inner">
+              <div class="logo__inner">
+                <img class="answer__logo" src="images/logo2.png" alt="" />
+                <span class="answer__name">Amber tour</span>
+              </div>
+              <p class="feedback__date">20.09.2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <h3 class="feedback__title">Экскурсия «Куршская Коса»</h3>
+          <p class="feedback__text">
+            Побывала на двух экскурсиях от Янтарной Мозаики «Куршская Коса» и «Рыцари, кирхи и замки». Обе очень понравились,
+            хорошо организованы, гиды дают много интересной информации. Особенно хочется отметить работу гидов Марины Геннадьевны
+            и Надежды.
+          </p>
+          <div class="feedback__inner">
+            <div class="feedback__name">Екатерина</div>
+            <div class="feedback__date">14.10.2021</div>
+          </div>
+        </div>
+        <div class="feedback__item">
+          <h3 class="feedback__title">Тур “Азбука экскурсий по Калининградской области”</h3>
+          <p class="feedback__text">
+            Приобретали тур “Азбука экскурсий по Калининградской области” осенне-зимний тур на 6 дней.(с 25.10.2021 г.-30.10.2021
+            г.) Отдыхом довольны. Выражаем огромную благодарность организатором за такие интересные экскурсии, водителям, гидам и
+            всем кто причастен. Экскурсии были захватывающие, интересные. Мы были в восторге от всего увиденного. Хотя одна
+            экскурсия была отменена из за введение нерабочих дней.(Деньги вернули без проблем). Эмоции и отличное настроение
+            получали каждый день. Ещё раз выражаем благодарность. Желаем процветания и творческих успехов в Вашей работе.
+            Обязательно всем рекомендуем побывать в этих прекрасных местах. И очень надеемся, что мы еще раз к Вам прилетим.
+          </p>
+          <div class="feedback__inner">
+            <div class="feedback__name">Елена</div>
+            <div class="feedback__date">14.10.2021</div>
+          </div>
+          <div class="feedback__foto uk-child-width-1-3@m" uk-lightbox="animation: slide">
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/Kharkov1.jpg" alt="">
+                <img class="feedback__img" src="images/Kharkov1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="feedback__img-wrap">
+              <a class="feedback__img-link uk-inline" href="images/Kharkov2.jpg" alt="">
+                <img class="feedback__img" src="images/Kharkov2.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="footer__logo" href="index.html">
+            <img class="footer__logo-img" src="images/logo.png" alt="logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a class="menu__list-link" href="">О компании</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Туристам</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">Турагенствам</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="contact-page.html">Контакты</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="feedback-page.html">Отзывы</a></li>
+            </ul>
+          </nav>
+          <div class="social__wrapp">
+            <a class="social__item" href="#"><img class="social__item-img" src="images/instagram.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/vk.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/ok.svg" alt="logo" /> </a>
+            <a class="social__item" href="#"><img class="social__item-img" src="images/facebook.svg" alt="logo" /> </a>
+            <a class="social__item" href="#">
+              <img class="social__item-img" src="images/Mask-Group.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="phone__inner">
+            <a class="footer__number" href="tel:88001009186">8 800-100-91-86</a>
+            <p class="footer__number-info">Бесплатно для регионов РФ</p>
+          </div>
+          <a class="copyright" href="#">© «Янтарная Мозаика-Надежда»</a>
+          <div class="support">Поддержка и продвижение <a class="support__link" href="#">traffic-system.ru</a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="notification__form">
+      <div class="notification__form-wrapp">
+        <div class="notification__decor"></div>
+        <div class="notification__text-inner">
+          <p class="notification__text-title">Спасибо за отзыв!</p>
+          <p class="notification__text">Он появится на сайте после небольшой модерации</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+    <script type="text/javascript" src="js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
