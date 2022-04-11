@@ -2010,6 +2010,17 @@ body {
   .input__title {
     max-width: 90%;
   }
+  .notification__form {
+    left: 10px;
+    bottom: 10px;
+  }
+  .notification__text-inner {
+    padding: 10px 10px 10px 10px;
+    background: rgba(255, 255, 255, 1);
+    line-height: 140%;
+    height: 82px;
+    width: 253px;
+  }
 }
 @media (max-width: 475px) {
   .form-number {
@@ -2153,6 +2164,9 @@ body {
   }
   .map {
     width: 97vw;
+  }
+  .custom-checkbox {
+    max-width: 300px;
   }
 }
 @media (max-width: 320px) {
