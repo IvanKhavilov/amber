@@ -27,7 +27,7 @@ $(document).ready(function () {
       },
     ],
   });
-  $(".feedback__wrapp").slick({
+  $(".reviews__wrapp").slick({
     dots: true,
     infinite: true,
     centerMode: true,
@@ -56,12 +56,12 @@ $(document).ready(function () {
     $(".covid-info").css("display", "none");
   });
 
-  $(".covid-info").show();
-
   $(".menu-burger").on("click", function () {
     $(".menu-burger").toggleClass("_active");
     $(".menu__list").toggleClass("_active");
   });
+
+  $(".notification__form").delay(5000).hide(300);
 });
 
 let headerParalax = document.querySelectorAll(".bg-paralax");
@@ -71,3 +71,40 @@ this.addEventListener("scroll", function () {
     paralax.style.top = +this.pageYOffset + "px";
   }
 });
+
+const sityBtn = document.querySelectorAll(".sity");
+const sityMap = document.querySelectorAll(".map");
+const sityInfo = document.querySelectorAll(".location__info-item ");
+
+sityBtn.forEach(function (elem) {
+  elem.addEventListener("click", activeBtn);
+});
+
+function activeBtn() {
+  sityBtn.forEach(function (elem) {
+    elem.classList.remove("_active");
+  });
+  this.classList.add("_active");
+
+  let activeSityMap = this.getAttribute("data-map");
+  let activeSityInfo = this.getAttribute("data-info");
+
+  activeInfo(activeSityInfo);
+}
+
+function activeInfo(activeSityInfo) {
+  sityInfo.forEach(function (item) {
+    if (item.classList.contains(activeSityInfo)) {
+      item.classList.add("_active");
+    } else {
+      item.classList.remove("_active");
+    }
+  });
+  sityMap.forEach(function (item) {
+    if (item.classList.contains(activeSityInfo)) {
+      item.classList.add("_active");
+    } else {
+      item.classList.remove("_active");
+    }
+  });
+}
