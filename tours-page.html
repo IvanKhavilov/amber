@@ -64,34 +64,53 @@
     </section>
     <div class="tours__list">
       <div class="container">
-        <button class="tour__filter">Туры из Москвы</button>
-        <button class="tour__filter">Туры из Санкт-Петербурга</button>
-        <button class="tour__filter">Туры на 10 дней</button>
-        <button class="tour__filter">Туры на 5 дней</button>
-        <button class="tour__filter">Туры на 7 дней</button>
-        <button class="tour__filter">Туры на выходные</button>
-        <button class="tour__filter">Туры на двоих</button>
-        <button class="tour__filter">Туры на троих</button>
-        <button class="tour__filter">Туры на Балтийское море</button>
-        <button class="tour__filter">Туры на Новый Год 2022</button>
+        <div class="tour__filter-wrapp">
+          <button class="tour__filter">Туры из Москвы</button>
+          <button class="tour__filter">Туры из Санкт-Петербурга</button>
+          <button class="tour__filter">Туры на 10 дней</button>
+          <button class="tour__filter">Туры на 5 дней</button>
+          <button class="tour__filter">Туры на 7 дней</button>
+          <button class="tour__filter">Туры на выходные</button>
+          <button class="tour__filter">Туры на двоих</button>
+          <button class="tour__filter">Туры на троих</button>
+          <button class="tour__filter">Туры на Балтийское море</button>
+          <button class="tour__filter">Туры на Новый Год 2022</button>
+        </div>
+        <button class="show__more-filter">
+          Показать ещё
+          <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 1.5L5.70707 4.79293C5.31818 5.18182 4.68182 5.18182 4.29293 4.79293L1 1.5"
+              stroke="#a4abaf"
+              stroke-width="2"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
     <section class="tours__cards">
       <div class="container">
         <div class="cards__wrapp">
-          <div class="card">
-            <img class="card__img" src="images/card-img1.jpg" alt="" />
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img1.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">Эксклюзивный тур «Вагнер. Возвращение в Кёнигсберг»</h5>
               <ul class="card__list">
                 <li class="card__list-item calendar-decor">с 1 по 3 апреля</li>
                 <li class="card__list-item clock-decor">3 дня, 2 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img2.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img2.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «АмберЛэнд»,<br />
@@ -101,11 +120,13 @@
                 <li class="card__list-item calendar-decor">с 14 января по 25 марта заезд каждую пятницу</li>
                 <li class="card__list-item clock-decor">5 дней, 4 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img3.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img3.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «АмберЛэнд»,<br />
@@ -115,11 +136,13 @@
                 <li class="card__list-item calendar-decor">с 1 по 26 апреля, заезд каждую пятницу</li>
                 <li class="card__list-item clock-decor">5 дней, 4 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img4.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img4.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «В Тридевятом Царстве»,<br />
@@ -129,11 +152,13 @@
                 <li class="card__list-item calendar-decor">с 15 января по 26 марта, заезд каждую субботу</li>
                 <li class="card__list-item clock-decor">8 дней, 7 ночей</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img5.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img5.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «В Тридевятом Царстве»,<br />
@@ -143,11 +168,13 @@
                 <li class="card__list-item calendar-decor">с 2 апреля, заезд каждую субботу</li>
                 <li class="card__list-item clock-decor">3 дня, 2 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img6.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img6.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 Тур «Мартовские выходные<br />
@@ -157,11 +184,13 @@
                 <li class="card__list-item calendar-decor">с 5 по 8 марта</li>
                 <li class="card__list-item clock-decor">4 дня, 3 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img7.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img7.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «На самом западе России»,<br />
@@ -171,11 +200,13 @@
                 <li class="card__list-item calendar-decor">с 14 января по 25 марта, заезд каждую субботу</li>
                 <li class="card__list-item clock-decor">5 дней, 4 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img8.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img8.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «На самом западе России»,<br />
@@ -185,11 +216,13 @@
                 <li class="card__list-item calendar-decor">с 1 апреля, заезд каждую пятницу</li>
                 <li class="card__list-item clock-decor">5 дней, 4 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img9.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img9.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «В Калининград в любой день. <br />
@@ -199,11 +232,13 @@
                 <li class="card__list-item calendar-decor">с 10 января по 31 марта, заезд в любой день</li>
                 <li class="card__list-item clock-decor">от 2 до 7 дней</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img10.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img10.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «В Калининград в любой день. <br />
@@ -213,11 +248,13 @@
                 <li class="card__list-item calendar-decor">с 1 по 30 апреля, заезд в любой день</li>
                 <li class="card__list-item clock-decor">от 2 до 7 дней</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img11.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img11.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 «Азбука экскурсий <br />
@@ -227,11 +264,13 @@
                 <li class="card__list-item calendar-decor">с 4 по 25 апреля, заезд каждый понедельник</li>
                 <li class="card__list-item clock-decor">6 дней, 5 ночей</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
-          <div class="card">
-            <img class="card__img" src="images/card-img12.jpg" alt="" />
+          </a>
+          <a class="card" href="#">
+            <div class="card__img-scale">
+              <img class="card__img" src="images/card-img12.jpg" alt="" />
+            </div>
             <div class="card__descr">
               <h5 class="card__title">
                 Тур «Первое мая <br />
@@ -241,9 +280,9 @@
                 <li class="card__list-item calendar-decor">с 29 апреля по 3 мая</li>
                 <li class="card__list-item clock-decor">5 дней, 4 ночи</li>
               </ul>
-              <a class="card__price" href="#">От 21 000 ₽</a>
+              <button class="card__price-link">От 21 000 ₽</button>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -303,8 +342,8 @@
               <li class="menu__list-item"><a class="menu__list-link" href="">О компании</a></li>
               <li class="menu__list-item"><a class="menu__list-link" href="">Туристам</a></li>
               <li class="menu__list-item"><a class="menu__list-link" href="">Турагенствам</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="contact-page.html">Контакты</a></li>
               <li class="menu__list-item"><a class="menu__list-link" href="feedback-page.html">Отзывы</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="contact-page.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="social__wrapp">
