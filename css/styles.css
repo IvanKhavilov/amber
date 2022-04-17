@@ -1608,10 +1608,10 @@ body {
   height: 314px;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 .input__name {
   display: block;
-  margin-top: 30px;
   background: #f6f7f7;
   width: 282px;
   height: 45px;
