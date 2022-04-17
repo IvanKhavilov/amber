@@ -75,7 +75,6 @@ address,
 dl,
 fieldset,
 figure,
-ol,
 pre {
   margin: 0 0 20px 0;
 }
@@ -83,9 +82,7 @@ pre {
 * + dl,
 * + fieldset,
 * + figure,
-* + ol,
-* + pre,
-* + ul {
+* + pre {
   margin-top: 20px;
 }
 .uk-h1,
@@ -98,13 +95,7 @@ pre {
 .uk-heading-large,
 .uk-heading-medium,
 .uk-heading-small,
-.uk-heading-xlarge,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.uk-heading-xlarge {
   margin: 0 0 0px 0;
   font-weight: 400;
   text-transform: none;
@@ -119,13 +110,7 @@ h6 {
 * + .uk-heading-large,
 * + .uk-heading-medium,
 * + .uk-heading-small,
-* + .uk-heading-xlarge,
-* + h1,
-* + h2,
-* + h3,
-* + h4,
-* + h5,
-* + h6 {
+* + .uk-heading-xlarge {
   margin-top: 40px;
 }
 .uk-h1,
@@ -159,12 +144,10 @@ h6 {
   line-height: 1.4;
 }
 @media (min-width: 960px) {
-  .uk-h1,
-  h1 {
+  .uk-h1 {
     font-size: 2.625rem;
   }
-  .uk-h2,
-  h2 {
+  .uk-h2{
     font-size: 2rem;
   }
 }
