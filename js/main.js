@@ -73,7 +73,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    infinite: false,
+    infinite: true,
+    fade: true,
     asNavFor: ".description__slider-nav",
     prevArrow: `
       <button type="button" class="slick-prev">
@@ -98,7 +99,7 @@ $(document).ready(function () {
     arrows: false,
     asNavFor: ".description__slider-for",
     focusOnSelect: true,
-    infinite: false,
+    infinite: true,
     variableWidth: true,
     prevArrow: `
       <button type="button" class="slick-prev">
