@@ -53,7 +53,7 @@ $(document).ready(function () {
   $(".slick-dots").wrap("<div class='slick-dots__wrap'></div>");
 
   $(".covid-info__close").on("click", function () {
-    $(".covid-info").css("display", "none");
+    $(".covid-info").hide(300);
   });
   $(".tour__buy-btn").on("click", function () {
     $(".description__form-wrapper").toggleClass("_active");
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
   $(".menu-burger").on("click", function () {
     $(".menu-burger").toggleClass("_active");
-    $(".menu__list").toggleClass("_active");
+    $(".menu__list-header").toggleClass("_active");
   });
 
   $(".notification__form").delay(5000).hide(300);
@@ -138,7 +138,8 @@ let headerParalax = document.querySelectorAll(".bg-paralax");
 
 this.addEventListener("scroll", function () {
   for (paralax of headerParalax) {
-    paralax.style.top = +this.pageYOffset + "px";
+    paralax.style.top = +this.scrollY + "px";
+    paralax.style.backgroundPositionY = -+(+this.scrollY) / 2 + "px";
   }
 });
 
