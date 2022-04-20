@@ -2124,6 +2124,12 @@ body {
   .header__slider-inner .slick-dots button::before {
     font-size: 14px;
   }
+  .menu__list-footer {
+    max-width: 450px;
+  }
+  .menu__list-footer .menu__list-item {
+    padding: 0;
+  }
   .footer .phone__inner {
     margin-left: 0;
   }
@@ -2361,6 +2367,9 @@ body {
   }
   .hotel__table {
     font-size: 12px;
+  }
+  .menu__list-footer {
+    display: none;
   }
 }
 @media (max-width: 815px) {
