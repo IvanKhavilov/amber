@@ -27,7 +27,7 @@
             <span></span>
           </div>
           <nav class="menu">
-            <ul class="menu__list">
+            <ul class="menu__list menu__list-header">
               <li class="menu__item menu__item--submenu menu__item--active">
                 <a class="menu__link menu__link--submenu" href="#">О компании</a>
               </li>
@@ -61,7 +61,9 @@
         </div>
       </div>
     </header>
-    <section class="mein-screen" style="background-image: url(images/tour-page-bg.jpg)">
+
+    <section class="mein-screen">
+      <div class="bg-paralax" id="bg-paralax" style="background-image: url(images/tour-page-bg.jpg)"></div>
       <div class="main-screen__wrapp">
         <a class="main-screen__link" href="#">Приём в Калининграде и области</a>
         <img class="main-screen__arrow" src="images/arrow-right.svg" alt="" />
@@ -239,8 +241,10 @@
       <div class="container">
         <h2 class="section__title">Стоимость тура на 1 человека</h2>
         <div class="tour__price-wrapp">
-          <div class="card__price">
-            <img class="card__price-img" src="images/card-price1.jpg" alt="" />
+          <a class="card__price" href="#">
+            <div class="card__price-scale">
+              <img class="card__price-img" src="images/card-price1.jpg" alt="" />
+            </div>
             <div class="card__price-inner">
               <p class="card__price-title">Отель «Кристалл Хаус»</p>
               <div class="card__price-grade">
@@ -268,9 +272,11 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="card__price">
-            <img class="card__price-img" src="images/card-price2jpg.jpg" alt="" />
+          </a>
+          <a class="card__price" href="#">
+            <div class="card__price-scale">
+              <img class="card__price-img" src="images/card-price2jpg.jpg" alt="" />
+            </div>
             <div class="card__price-inner">
               <p class="card__price-title">Отель «Холидей Инн»</p>
               <div class="card__price-grade">
@@ -298,9 +304,11 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="card__price">
-            <img class="card__price-img" src="images/card-price3.jpg" alt="" />
+          </a>
+          <a class="card__price" href="#">
+            <div class="card__price-scale">
+              <img class="card__price-img" src="images/card-price3.jpg" alt="" />
+            </div>
             <div class="card__price-inner">
               <p class="card__price-title">Отель «IBIS Kalinigrad Center»</p>
               <div class="card__price-grade">
@@ -328,9 +336,11 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="card__price">
-            <img class="card__price-img" src="images/card-price4.jpg" alt="" />
+          </a>
+          <a class="card__price" href="#">
+            <div class="card__price-scale">
+              <img class="card__price-img" src="images/card-price4.jpg" alt="" />
+            </div>
             <div class="card__price-inner">
               <p class="card__price-title">Отель «Кристалл Хаус»</p>
               <div class="card__price-grade">
@@ -358,7 +368,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
