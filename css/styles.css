@@ -2211,7 +2211,7 @@ body {
     position: static;
     background: rgba(128, 128, 128, 0);
     backdrop-filter: blur(0);
-    width: 330px;
+    width: 100%;
     padding: 0 10px;
   }
   .menu__item--active::after {
@@ -2462,6 +2462,9 @@ body {
   .menu__list {
     left: 20%;
   }
+  .submenu__item {
+    border-bottom: none;
+  }
   .sentence__slider-price {
     margin-top: 10px;
   }
@@ -2590,7 +2593,7 @@ body {
   }
 }
 @media (max-width: 530px) {
-  .menu__list {
+  .menu__list-header {
     display: flex;
     flex-direction: column;
     top: -270px;
